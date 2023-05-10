@@ -1,0 +1,5 @@
+project: epub-builder
+target: fuzz-metadata
+
+cmds:
+    - cmd: /fuzz_metadata

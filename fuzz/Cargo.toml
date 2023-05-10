@@ -1,0 +1,32 @@
+[package]
+name = "fuzz_epub_builder"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+
+[dependencies.epub-builder]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_content"
+path = "fuzz_targets/fuzz_content.rs"
+
+[[bin]]
+name = "fuzz_cover_image"
+path = "fuzz_targets/fuzz_cover_image.rs"
+
+[[bin]]
+name = "fuzz_metadata"
+path = "fuzz_targets/fuzz_metadata.rs"
+
+[[bin]]
+name = "fuzz_stylesheet"
+path = "fuzz_targets/fuzz_stylesheet.rs"

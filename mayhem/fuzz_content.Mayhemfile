@@ -1,0 +1,5 @@
+project: epub-builder
+target: fuzz-content
+
+cmds:
+    - cmd: /fuzz_content
