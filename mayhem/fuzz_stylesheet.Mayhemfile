@@ -1,0 +1,5 @@
+project: epub-builder
+target: fuzz-stylesheet
+
+cmds:
+    - cmd: /fuzz_stylesheet

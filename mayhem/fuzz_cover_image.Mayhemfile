@@ -1,0 +1,5 @@
+project: epub-builder
+target: fuzz-cover-image
+
+cmds:
+    - cmd: /fuzz_cover_image
